@@ -31,16 +31,85 @@
     </header>
 
     <section class="mainSection">
-       
-            <form>
-                <div class="formHeader">
-                    <h3>employee payroll form</h3>
-                </div>
-                <div class="rowContent">
-                    <label class="label text" for="text">Name: </label>
-                    <input class="input" type="text" id="fullName" placeholder="Your full name.." required>
-                </div>
-            </form>
+      <form>
+        <div class="formHeader">
+          <h3>employee payroll form</h3>
+        </div>
+        <div class="rowContent">
+          <label class="label text" for="text">Name: </label>
+          <input
+            class="input"
+            type="text"
+            id="fullName"
+            placeholder="Your full name.."
+            required
+          />
+        </div>
+        <div class="rowContent">
+          <label class="label text" for="text">Profile picture: </label>
+          <div class="profile-radio-content">
+            <label>
+              <input
+                type="radio"
+                name="profile"
+                id="profile1"
+                value="\Assets\man.png"
+                required
+              />
+              <img src="\Assets\man.png" class="profile" id="image1" alt="" />
+            </label>
+          </div>
+
+          <div class="profile-radio-content">
+            <label>
+              <input
+                type="radio"
+                name="profile"
+                id="profile2"
+                value="\Assets\avatar(1).png"
+                required
+              />
+              <img
+                src="\Assets\avatar(1).png"
+                class="profile"
+                id="image2"
+                alt=""
+              />
+            </label>
+          </div>
+
+          <div class="profile-radio-content">
+            <label>
+              <input
+                type="radio"
+                name="profile"
+                id="profile3"
+                value="\Assets\gamer.png"
+                required
+              />
+              <img src="\Assets\gamer.png" class="profile" id="image3" alt="" />
+            </label>
+          </div>
+
+          <div class="profile-radio-content">
+            <label>
+              <input
+                type="radio"
+                name="profile"
+                id="profile4"
+                value="\Assets\avatar.png"
+                required
+              />
+              <img
+                src="\Assets\avatar.png"
+                class="profile"
+                id="image4"
+                alt=""
+              />
+            </label>
+          </div>
+        </div>
+      </form>
     </section>
   </body>
 </html>
