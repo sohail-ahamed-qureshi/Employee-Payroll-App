@@ -21,5 +21,47 @@ fullName.addEventListener("input", function () {
       "**Invalid!!, Name must Start with Uppercase and have min 3 characters";
     submitButton.disabled = true;
   }
-  
 });
+
+//Date Validations
+var day = document.querySelector("#day");
+var month = document.querySelector("#month");
+var year = document.querySelector("#year");
+var currentDate = new Date();
+
+function validateDate(){
+//validation for future dates
+if(year.value == currentDate.getFullYear() && (month.value <= currentDate.getMonth()) && (day.value <= currentDate.getDate())){
+  errorText.textContent = "";
+  submitButton.disabled = false;
+}
+else if(year.value < currentDate.getFullYear()){
+  //alert(day.value +" " + month.options[month.selectedIndex].textContent +" " +year.value);
+  errorText.textContent = "";
+  submitButton.disabled = false;
+}
+else if(year.value == 0 || month.value == 12 || day.value == 0){
+  errorText.textContent = "Select Valid Dates"
+  submitButton.disabled = true;
+}
+else if(year.value > currentDate.getFullYear()) {
+  errorText.textContent ="Cannot select future dates";
+  submitButton.disabled = true;
+}else if(year.value == currentDate.getFullYear() && month.value > currentDate.getMonth())
+{
+  errorText.textContent ="Cannot select future dates";
+  submitButton.disabled = true;
+}
+else{
+  errorText.textContent = "Invalid Dates"
+  submitButton.disabled = true;
+}
+}
+
+year.addEventListener("change", validateDate);
+month.addEventListener("change", validateDate);
+day.addEventListener("change", validateDate);
+
+
+
+
