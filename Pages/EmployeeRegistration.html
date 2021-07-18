@@ -112,17 +112,17 @@
 
         <div class="rowContent">
           <label class="label text" for="gender">Gender: </label>
-          <div class="">
+          <div class="genderContainer">
             <input type="radio" name="gender" id="gender" value="Male" />
             <label class="gender text" for="gender">Male</label>
           </div>
-          <div class="">
+          <div class="genderContainer">
             <input type="radio" name="gender" id="gender" value="Female" />
             <label class="gender text" for="gender">Female</label>
           </div>
         </div>
 
-        <div class="rowContent">
+        <div class="departmentContentCheckbox rowContent">
           <label class="label text" for="department">Department: </label>
           <div>
             <input type="checkbox" name="department" id="HR" value="HR" />
@@ -144,6 +144,17 @@
             <input type="checkbox" name="department" id="Others" value="Others" />
             <label class="labels text" for="Others">Others</label>
           </div>
+        </div>
+
+        <div class="departmentContentOptions rowContent">
+          <label class="label text" for="department">Department: </label>
+          <select class="departmentSelect" name="department" id="department">
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Sales">Sales</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Others">Others</option>
+          </select>
         </div>
 
         <div class="rowContent">
@@ -219,6 +230,9 @@
             <textarea class="notes" type="text" name="notes" id="notes" cols="5" ></textarea>
           </div>
         </div>
+        <div class="errorText">
+          <error-output  id="errorText" >Error</error-output>
+        </div>
         <div class="buttonParent">
           <button class="button" >Cancel</button>
           <div class="rightButtons">
@@ -226,6 +240,7 @@
             <button class="button" type="reset">Reset</button>
           </div>
         </div>
+       
       </form>
     </section>
 

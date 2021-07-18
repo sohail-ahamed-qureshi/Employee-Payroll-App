@@ -78,21 +78,21 @@ form {
   min-width: 140px;
 }
 
-.labels{
+.labels {
   margin-right: 20px;
   margin-left: 12px;
 }
 
-.slider{
+.slider {
   min-width: 350px;
 }
 
-.salaryContent{
+.salaryContent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.slider{
+.slider {
   margin-right: 12px;
 }
 
@@ -132,29 +132,35 @@ label {
   margin-left: 12px;
 }
 
-.gender{
+.gender {
   margin-left: 12px;
 }
 
-select, .button{
-padding: 12px;
-border: 1px solid #ccc ;
-margin-right: 12px;
-width: 100px;
-border-radius: 5px;
-font-family: 'Roboto';
-background-color: transparent;
-color: #42515f;
-resize: vertical;
-transform: all 5s ease;
+.departmentContentOptions {
+  display: none;
 }
 
-select:hover, button:hover{
-background-color: #42515f;
-color: #ffffff;
+select,
+.button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+  width: 100px;
+  border-radius: 5px;
+  font-family: "Roboto";
+  background-color: transparent;
+  color: #42515f;
+  resize: vertical;
+  transform: all 5s ease;
 }
 
-textarea{
+select:hover,
+button:hover {
+  background-color: #42515f;
+  color: #ffffff;
+}
+
+textarea {
   width: 700px;
   height: 100px;
   padding: 12px;
@@ -163,17 +169,121 @@ textarea{
   resize: vertical;
 }
 
-.button{
+.button {
   margin-top: 25px;
   background-color: #ccc;
 }
 
-.buttonParent{
+.buttonParent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.submitButton:hover{
+.submitButton:hover {
   background-color: #82a70c;
+}
+
+.errorText{
+  text-align: center;
+  color: tomato;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    padding: 20px 0px 20px 50px;
+  }
+
+  header img {
+    height: 25px;
+  }
+
+  header div h3 {
+    font-size: 14px;
+  }
+
+  .mainSection {
+    max-width: 360px;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .formHeader h3 {
+    font-size: 16px;
+  }
+
+  .label {
+    min-width: 100px;
+  }
+
+  .labels {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .slider {
+    min-width: 50%;
+  }
+
+  label {
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .input {
+    width: 200px;
+    padding: 6px;
+  }
+  .profile,
+  .gender {
+    width: 30px;
+    margin-left: 4px;
+  }
+
+  input[type="radio"] {
+    height: 10px;
+  }
+  .gender {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .departmentContentCheckbox {
+    display: none;
+  }
+
+  .departmentContentOptions {
+    display: block;
+  }
+
+  select,
+  .button {
+    padding: 6px;
+    margin-right: 6px;
+    width: 60px;
+  }
+
+  .buttonParent {
+    padding-right: 30px;
+  }
+
+  .departmentSelect {
+    padding: 6px;
+    width: 100px;
+  }
+
+  textarea {
+    width: 200px;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
 }
