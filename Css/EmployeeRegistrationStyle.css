@@ -115,6 +115,9 @@ label {
   border-radius: 4px;
   resize: vertical;
 }
+input{
+  cursor: pointer;
+}
 
 .profile-radio-content {
   display: flex;
@@ -151,6 +154,7 @@ select,
   background-color: transparent;
   color: #42515f;
   resize: vertical;
+  cursor: pointer;
   transform: all 5s ease;
 }
 
@@ -172,6 +176,7 @@ textarea {
 .button {
   margin-top: 25px;
   background-color: #ccc;
+  cursor: pointer;
 }
 
 .buttonParent {
@@ -182,9 +187,18 @@ textarea {
 
 .submitButton:hover {
   background-color: #82a70c;
+  cursor: pointer;
+}
+
+.submitButton:disabled{
+  background-color: grey;
+  border: 1px solid grey;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .errorText{
+  padding: 10px ;
   text-align: center;
   color: tomato;
   font-style: italic;
