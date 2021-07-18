@@ -135,3 +135,45 @@ label {
 .gender{
   margin-left: 12px;
 }
+
+select, .button{
+padding: 12px;
+border: 1px solid #ccc ;
+margin-right: 12px;
+width: 100px;
+border-radius: 5px;
+font-family: 'Roboto';
+background-color: transparent;
+color: #42515f;
+resize: vertical;
+transform: all 5s ease;
+}
+
+select:hover, button:hover{
+background-color: #42515f;
+color: #ffffff;
+}
+
+textarea{
+  width: 700px;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.button{
+  margin-top: 25px;
+  background-color: #ccc;
+}
+
+.buttonParent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.submitButton:hover{
+  background-color: #82a70c;
+}
