@@ -113,11 +113,11 @@
         <div class="rowContent">
           <label class="label text" for="gender">Gender: </label>
           <div class="genderContainer">
-            <input type="radio" name="gender" id="gender" value="Male" />
+            <input type="radio" name="gender" id="gender" value="Male" disabled />
             <label class="gender text" for="gender">Male</label>
           </div>
           <div class="genderContainer">
-            <input type="radio" name="gender" id="gender" value="Female" />
+            <input type="radio" name="gender" id="gender" value="Female" disabled />
             <label class="gender text" for="gender">Female</label>
           </div>
         </div>
@@ -141,7 +141,7 @@
             <label class="labels text" for="Finance">Finance</label>
           </div>
           <div>
-            <input type="checkbox" name="department" id="Others" value="Others" />
+            <input type="checkbox" name="department" id="Others" value="Others" checked />
             <label class="labels text" for="Others">Others</label>
           </div>
         </div>
@@ -235,7 +235,8 @@
           </div>
         </div>
         <div class="errorText">
-          <error-output  id="errorText" >Error</error-output>
+          <error-output  id="errorText" ></error-output>
+          <error-output  id="errorname" ></error-output>
         </div>
         <div class="buttonParent">
           <button class="button" >Cancel</button>
