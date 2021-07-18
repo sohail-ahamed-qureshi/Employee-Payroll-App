@@ -190,7 +190,8 @@ textarea {
   font-style: italic;
 }
 
-@media only screen and (max-width: 400px) {
+/* for devices upto 400px */
+@media only screen and (max-width: 480px) {
   header {
     padding: 20px 0px 20px 50px;
   }
@@ -269,6 +270,10 @@ textarea {
     width: 60px;
   }
 
+  .button{
+    color: #42515f;
+  }
+
   .buttonParent {
     padding-right: 30px;
   }
@@ -285,5 +290,119 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+  }
+
+  .submitButton {
+    background-color: #82a70c;
+    color: #ffffff;
+  }
+}
+
+
+/* for devices upto 600px */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px 0px 20px 50px;
+  }
+
+  header img {
+    height: 25px;
+  }
+
+  header div h3 {
+    font-size: 14px;
+  }
+
+  .mainSection {
+    max-width: 360px;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .formHeader h3 {
+    font-size: 16px;
+  }
+
+  .label {
+    min-width: 100px;
+  }
+
+  .labels {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .slider {
+    min-width: 50%;
+  }
+
+  label {
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .input {
+    width: 200px;
+    padding: 6px;
+  }
+  .profile,
+  .gender {
+    width: 30px;
+    margin-left: 4px;
+  }
+
+  input[type="radio"] {
+    height: 10px;
+  }
+  .gender {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .departmentContentCheckbox {
+    display: none;
+  }
+
+  .departmentContentOptions {
+    display: block;
+  }
+
+  select,
+  .button {
+    padding: 6px;
+    margin-right: 6px;
+    width: 60px;
+  }
+
+  .button{
+    color: #42515f;
+  }
+
+  .buttonParent {
+    padding-right: 30px;
+  }
+
+  .departmentSelect {
+    padding: 6px;
+    width: 100px;
+  }
+
+  textarea {
+    width: 200px;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  .submitButton {
+    background-color: #82a70c;
+    color: #ffffff;
   }
 }
