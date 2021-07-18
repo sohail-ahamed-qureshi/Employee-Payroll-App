@@ -109,7 +109,53 @@
             </label>
           </div>
         </div>
+
+        <div class="rowContent">
+          <label class="label text" for="gender">Gender: </label>
+          <div class="">
+            <input type="radio" name="gender" id="gender" value="Male" />
+            <label class="gender text" for="gender">Male</label>
+          </div>
+          <div class="">
+            <input type="radio" name="gender" id="gender" value="Female" />
+            <label class="gender text" for="gender">Female</label>
+          </div>
+        </div>
+
+        <div class="rowContent">
+          <label class="label text" for="department">Department: </label>
+          <div>
+            <input type="checkbox" name="department" id="HR" value="HR" />
+            <label class="labels text" for="HR">HR</label>
+          </div>
+          <div>
+            <input type="checkbox" name="department" id="sales" value="Sales" />
+            <label class="labels text" for="sales">Sales</label>
+          </div>
+          <div>
+            <input type="checkbox" name="department" id="Engineering" value="Engineering" />
+            <label class="labels text" for="Engineering">Engineering</label>
+          </div>
+          <div>
+            <input type="checkbox" name="department" id="Finance" value="Finance" />
+            <label class="labels text" for="Finance">Finance</label>
+          </div>
+          <div>
+            <input type="checkbox" name="department" id="Others" value="Others" />
+            <label class="labels text" for="Others">Others</label>
+          </div>
+        </div>
+
+        <div class="rowContent">
+          <label class="label text" for="Salary">Salary:</label>
+          <div class="salaryContent">
+            <input class="slider" type="range" name="Salary" id="salary" min="300000" max="500000" step="100">
+            <output-salary class="label text outputSalary" name="Salary" for="salary" ></output-salary>
+          </div>
+        </div>
       </form>
     </section>
+
+    <script src="\Js\AddEmployee.js"></script>
   </body>
 </html>

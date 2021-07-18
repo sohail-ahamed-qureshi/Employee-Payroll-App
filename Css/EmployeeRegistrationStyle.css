@@ -78,6 +78,24 @@ form {
   min-width: 140px;
 }
 
+.labels{
+  margin-right: 20px;
+  margin-left: 12px;
+}
+
+.slider{
+  min-width: 350px;
+}
+
+.salaryContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider{
+  margin-right: 12px;
+}
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
@@ -111,5 +129,9 @@ label {
 
 .profile {
   width: 40px;
+  margin-left: 12px;
+}
+
+.gender{
   margin-left: 12px;
 }
